@@ -4,17 +4,40 @@
 @import url(http://fonts.googleapis.com/css?family=Capriola);
 
 header{
-	position:fixed;	
-  background: #D0D0D0;
-  width: 100%;
-  height: 75px;
-  top: -15px;
+	position:fixed;
+	background: #222;
+	left: 0;	
+	right: 0;
+    top: 0;
+    min-height: 75px;
+    z-index: 75;
 }
+
+h1, h2, h3, h4, blockquote, q {
+font-family: "open sans",arial,sans-serif;
+}
+
+.header-content{
+	position: relative;
+	z-index: 12;
+}
+.header-content h1{
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	float: left;
+	line-height: 2;
+	left:25;
+}
+.header-content h1 img{
+	width: 65px;
+}
+
 a{
 	text-decoration: none;
 }
 nav{
-	
+	float: left;
 }
 nav ul{
 	
@@ -28,6 +51,7 @@ nav ul li{
 
 body{
 	background: #fff;
+	color: #b7b7b7;
 	font-size: 16px;
 	margin: 0;
 }
@@ -50,35 +74,11 @@ z-index: 3;
 }
 */
 
-.logo{	
-	position: relative;	
-	margin-left: 25px; 
-}
-.logo img{
-	width:75px;
-
-}
-.logo h1{
-	padding-left: 60px;
-	float: left;
-	font-family: 'Nixie One';
-	font-size: 36px;
-
-line-height: 1.375;
-margin: 0;
-}
-.logo h1 img {
-	left: 3px;
-	margin: 0;
-	position: absolute;
-	top: 3px;
-	vertical-align: baseline;
-}
 
 
 .content{	
-	position: relative;
 	margin: 0 auto;
+	padding-top: 80px;
 	text-align: center;
 }
 .block{
